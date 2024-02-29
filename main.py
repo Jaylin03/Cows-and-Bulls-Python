@@ -8,6 +8,18 @@ The game works like this:
   - Every time the user makes a guess, tell them how many “cows” and “bulls” they have.
   - Once the user guesses the correct number, the game is over.
   - Keep track of the number of guesses the user makes throughout the game and tell the user at the end.
+
+Breakdown:
+  1.) Generate a random 4 digit number
+  2.) Ask user for a 4 digit number
+      - Check if the number is in fact 4 digit
+  3.) Check how close user number is to random number
+      - same number AND same location = cow
+      - same number BUT wrong location = bull
+  4.) Print user's cows and bulls
+  5.) Increment guess counter variable
+  6.) Repeat steps 2-3 until user number equals random number
+  7.) Print number of guesses with proper labeling
 '''
 
 import random
